@@ -1,7 +1,7 @@
 // Espera a que el documento HTML se cargue por completo
 document.addEventListener('DOMContentLoaded', () => {
 
-    const sidebarHtmlFile = '/css/Componentes/HTML/sidebar/sidebar.html';
+    const sidebarHtmlFile = 'css/Componentes/HTML/sidebar/sidebar.html';
 
     fetch(sidebarHtmlFile)
         .then(response => {
@@ -16,11 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Carga el script de la barra lateral AHORA, después de que el HTML ha sido insertado
             const script = document.createElement('script');
-            script.src = '/js/script-sidebar.js'; // Asegúrate de que esta sea la ruta correcta
+            script.src = 'js/script-sidebar.js'; // Asegúrate de que esta sea la ruta correcta
             document.body.appendChild(script);
 
         })
         .catch(error => {
             console.error(error);
         });
+
 });
