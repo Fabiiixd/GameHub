@@ -13,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url(css/Componentes/imagenes/premium_photo-1681487748082-839c7c0ee0c4.jpg);
+  background-image: url('Componentes/imagenes/premium_photo-1681487748082-839c7c0ee0c4.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -119,7 +119,7 @@ textarea {
   margin-left: 2rem;  /* lo mueve más a la derecha */
   margin-top: 13rem;   /* lo baja hacia el área negra */
 
-  background-image: url(css/Componentes/imagenes/fondo-contacto.jpg);
+  background-image: url('Componentes/imagenes/fondo-contacto.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -192,3 +192,4 @@ textarea {
   padding-left: 20rem;
 
 }
+
