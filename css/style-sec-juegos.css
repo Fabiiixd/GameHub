@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'Pricedown';
+    /* nombre que usarás en font-family */
+    src: url('/css/Componentes/fronts/Pricedown\ Bl.otf') format('truetype');
+    /* ruta al archivo */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cs-regular';
+    /* nombre que usarás en font-family */
+    src: url('/css/Componentes/fronts/cs_regular.ttf') format('truetype');
+    /* ruta al archivo */
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'fortnite';
+    /* nombre que usarás en font-family */
+    src: url('/css/Componentes/fronts/fortnite.otf') format('truetype');
+    /* ruta al archivo */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*main */
+/* Reglas para el fondo de imagen */
+html {
+    background-image: url('../css/Componentes/imagenes/fondo-44k.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Opcional: para que el fondo no se mueva al hacer scroll */
+}
+
+/* Reglas para el body, que ahora controla los colores del contenido */
+body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    /* Esto cambia con el modo oscuro */
+    transition: color 0.5s ease, background-color 0.3s ease, left 0.5s ease;
+
+    /* Nota: También puedes usar 'background-color: transparent;' si el fondo del body debe ser transparente */
+}
+
+
+.cointainer-sobre-juego {
+    margin-left: 0rem;
+    /* deja espacio para el sidebar */
+    display: flex;
+    /* organiza los containers en fila */
+    gap: 1rem;
+    /* separación entre containers */
+    padding: 3rem;
+    flex-wrap: nowrap;
+    /* si no caben, se bajan a la siguiente línea */
+    padding-left: 11rem;
+}
+
+
+/*Container */
+.container {
+    position: relative;
+    width: 0px;
+    /* ancho del contenedor */
+    height: 0px;
+    /* alto del contenedor */
+    margin: 20px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    /* importante para que la imagen no se salga */
+    box-shadow: 0px 0px 50px 10px rgba(0, 255, 255, 0.2);
+    display: flex;
+    /* necesario para posicionar el texto */
+    justify-content: center;
+    align-items: center;
+    /* opcional */
+    animation: bordure 1.5s ease forwards;
+}
+
+@keyframes bordure {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    50% {
+        width: 300px;
+        height: 0;
+        opacity: 1;
+    }
+
+    100% {
+        width: 300px;
+        height: 400px;
+        opacity: 1;
+    }
+}
+
+/* Imágenes dentro del contenedor */
+.container img {
+    width: 100%;
+    /* llena todo el contenedor */
+    height: 100%;
+    object-fit: cover;
+    /* mantiene proporción y recorta si es necesario */
+    display: block;
+    /* evita que flex afecte la imagen */
+}
+
+.texto-juego {
+    position: absolute;
+    /* sobre la imagen */
+    top: 10%;
+    /* centrado vertical */
+    left: 50%;
+    /* centrado horizontal */
+    transform: translate(-50%, 0%);
+    color: #fdfdfd;
+    font-size: 24px;
+    text-align: center;
+    pointer-events: none;
+    /* no interfiere con clicks */
+}
+
+.texto-juego-gta {
+    position: absolute;
+    /* sobre la imagen */
+    top: 90%;
+    /* centrado vertical */
+    left: 50%;
+    /* centrado horizontal */
+    transform: translate(-50%, -50%);
+    color: #fdfdfd;
+    font-size: 24px;
+    text-align: center;
+    pointer-events: none;
+    /* no interfiere con clicks */
+    font-family: "Pricedown", sans-serif;
+    /* fuente personalizada */
+}
+
+.texto-juego-cs2 {
+    position: absolute;
+    /* sobre la imagen */
+    top: 90%;
+    /* centrado vertical */
+    left: 50%;
+    /* centrado horizontal */
+    transform: translate(-50%, -50%);
+    color: #fdfdfd;
+    font-size: 24px;
+    text-align: center;
+    pointer-events: none;
+    /* no interfiere con clicks */
+    font-family: "cs-regular", sans-serif;
+    /* fuente personalizada */
+}
+
+.texto-juego-fortnite {
+    position: absolute;
+    /* sobre la imagen */
+    top: 90%;
+    /* centrado vertical */
+    left: 50%;
+    /* centrado horizontal */
+    transform: translate(-50%, -50%);
+    color: #fdfdfd;
+    font-size: 24px;
+    text-align: center;
+    pointer-events: none;
+    /* no interfiere con clicks */
+    font-family: "fortnite", sans-serif;
+    /* fuente personalizada */
+}
+
+
+
+

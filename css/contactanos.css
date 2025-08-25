@@ -1,0 +1,193 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #333;
+  line-height: 1.5;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(/css/Componentes/imagenes/premium_photo-1681487748082-839c7c0ee0c4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+main {
+  width: 100%;
+  max-width: 1100px;
+  padding: 0px;
+  margin-left: 30rem; /* mismo ancho que tu sidebar */
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 30rem 60rem;
+  gap: 20px;
+  align-items: start;
+}
+
+/* Formulario */
+.formulario-container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.formulario-container h2 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+  font-size: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+}
+
+.formulario-container input, select, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.2s;
+}
+
+.formulario-container input:focus,
+.formulario-container select:focus,
+.formulario-container textarea:focus {
+  border-color: #0096fa;
+  box-shadow: 0 0 6px rgba(52,152,219,0.3);
+}
+
+/* Campos en línea */
+.inline-fields {
+  display: flex;
+  gap: 15px;
+}
+
+.inline-fields div {
+  flex: 1;
+}
+
+/* Botón enviar */
+input[type="submit"] {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background: #2980b9;
+}
+
+/* Textarea */
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Información */
+.informacion-formulario {
+  background: #0593f1;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 1000px !important;   /* más ancho que antes */
+  height: 30rem;
+  margin-left: 2rem;  /* lo mueve más a la derecha */
+  margin-top: 13rem;   /* lo baja hacia el área negra */
+
+  background-image: url(/css/Componentes/imagenes/fondo-contacto.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.informacion-formulario h2 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  padding-left: 23rem;
+}
+
+.informacion-formulario p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.informacion-formulario ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  padding-top: 4rem;
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .inline-fields {
+    flex-direction: column;
+  }
+}
+
+.redes-sociales a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background: white; /* fondo blanco */
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.redes-sociales a i {
+    font-size: 24px;
+    /* color inicial se define por red, no aquí */
+}
+
+/* Colores por red social */
+.redes-sociales a:nth-child(1) i { color: #3b5998; } /* Facebook azul */
+.redes-sociales a:nth-child(2) i { color: #1da1f2; } /* Twitter azul claro */
+.redes-sociales a:nth-child(3) i { color: #e1306c; } /* Instagram rosa/fucsia */
+.redes-sociales a:nth-child(4) i { color: #0077b5; } /* LinkedIn azul oscuro */
+.redes-sociales a:nth-child(5) i { color: #ff0000; } /* YouTube rojo */
+
+/* Hover: cambio de color y efecto de agrandamiento */
+.redes-sociales a:nth-child(1):hover i { color: #6d84b4; transform: scale(1.2); } 
+.redes-sociales a:nth-child(2):hover i { color: #66c0f4; transform: scale(1.2); } 
+.redes-sociales a:nth-child(3):hover i { color: #f777a3; transform: scale(1.2); } 
+.redes-sociales a:nth-child(4):hover i { color: #3399cc; transform: scale(1.2); } 
+.redes-sociales a:nth-child(5):hover i { color: #ff4d4d; transform: scale(1.2); } 
+
+/* Posición del contenedor de redes */
+.redes-sociales{
+  padding-top: 12rem;
+  padding-left: 20rem;
+}

@@ -1,0 +1,82 @@
+/* Ajustes del fondo */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(/css/Componentes/imagenes/fondo-44k.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  height: 100%;
+}
+
+/* Contenedor principal */
+.inicio {
+  display: flex;
+  height: 100vh;
+}
+
+/* Estilo del contenido Bienvenido */
+.Bienvenido {
+  flex: 1;
+  padding: 50px 20px;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Bienvenido p {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+}
+
+
+
+/* Cards */
+.card {
+  text-align: center;
+  transition: transform 0.5s ease, z-index 0.5s;
+  cursor: pointer;
+  position: relative;
+}
+
+.card img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.5);
+  z-index: 10;
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Contenedor de cards */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.cards-container + .cards-container {
+  margin-top: 40px;
+}
+
+
